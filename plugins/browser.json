@@ -9,7 +9,14 @@
     "installed_plugins": {
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "me.aoberoi.cordova.helloopentokjs"
+        },
+        "cordova-plugin-opentokjs": {
+            "PACKAGE_NAME": "me.aoberoi.cordova.helloopentokjs"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "me.aoberoi.cordova.helloopentokjs"
+        }
+    }
 }
