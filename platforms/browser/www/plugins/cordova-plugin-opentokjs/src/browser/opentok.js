@@ -8034,11 +8034,7 @@ $.onDOMLoad(onDomReady);
 // This is not obvious, so to prevent end-user frustration we'll let them know
 // explicitly rather than failing with a bunch of permission errors. We don't
 // handle this using an OT Exception as it's really only a development thing.
-if (location.protocol === 'file:') {
-  /*global alert*/
-  alert('You cannot test a page using WebRTC through the file system due to browser ' +
-    'permissions. You must run it over a web server.');
-}
+/* removed by cordova-plugin-opentokjs */
 
 var OT = window.OT || {};
 

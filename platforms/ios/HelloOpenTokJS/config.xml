@@ -14,9 +14,6 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="OpenTokPlugin">
-        <param name="ios-package" value="OpenTokPlugin" />
-    </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
     <name>HelloOpenTokJS</name>
@@ -34,4 +31,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <feature name="OpenTokPlugin">
+        <param name="ios-package" value="OpenTokPlugin" />
+    </feature>
 </widget>

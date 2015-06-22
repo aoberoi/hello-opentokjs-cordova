@@ -5,10 +5,6 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
-    <feature name="OpenTokPlugin">
-        <param name="android-package" value="me.aoberoi.cordova.opentokjs.OpenTokPlugin" />
-    </feature>
     <allow-intent href="market:*" />
     <name>HelloOpenTokJS</name>
     <description>
@@ -25,4 +21,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
+    <feature name="OpenTokPlugin">
+        <param name="android-package" value="me.aoberoi.cordova.opentokjs.OpenTokPlugin" />
+    </feature>
 </widget>

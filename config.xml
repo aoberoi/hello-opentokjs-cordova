@@ -23,6 +23,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <!-- TODO: adjust the spec to a non-local directory. this should get rid of the "node_modules" within the directory -->
     <plugin name="cordova-plugin-opentokjs" spec="../../cordova-plugin-opentokjs" />
 </widget>

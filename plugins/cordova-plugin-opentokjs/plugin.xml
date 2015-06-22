@@ -16,6 +16,7 @@
   <!-- only needed for android -->
   <dependency id="cordova-plugin-crosswalk-webview" version=">=1.2.0" />
 
+  <!-- TODO: do we need any native code for android? -->
   <platform name="android">
     <hook type="before_plugin_install" src="scripts/fetch-js-client.js" />
 

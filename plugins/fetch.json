@@ -7,20 +7,20 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-opentokjs": {
-        "source": {
-            "type": "local",
-            "path": "../../cordova-plugin-opentokjs"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-crosswalk-webview": {
         "source": {
             "type": "registry",
             "id": "cordova-plugin-crosswalk-webview"
         },
         "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-opentokjs": {
+        "source": {
+            "type": "local",
+            "path": "../../cordova-plugin-opentokjs"
+        },
+        "is_top_level": true,
         "variables": {}
     }
 }

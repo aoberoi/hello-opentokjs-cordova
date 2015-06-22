@@ -39,7 +39,7 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
-		931724F0660643D1BC1BB92D /* OpenTokPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C5467C2B15443093D5944F /* OpenTokPlugin.m */; };
+		76118462C2E842B39678E3A1 /* OpenTokPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 923C551573CB432A93C5E3CB /* OpenTokPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +105,7 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "HelloOpenTokJS/config.xml"; sourceTree = "<group>"; };
-		E2C5467C2B15443093D5944F /* OpenTokPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "OpenTokPlugin.m"; path = "cordova-plugin-opentokjs/OpenTokPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		923C551573CB432A93C5E3CB /* OpenTokPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "OpenTokPlugin.m"; path = "cordova-plugin-opentokjs/OpenTokPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,7 +204,7 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				E2C5467C2B15443093D5944F /* OpenTokPlugin.m */,
+				923C551573CB432A93C5E3CB /* OpenTokPlugin.m */,
 			);
 			name = Plugins;
 			path = "HelloOpenTokJS/Plugins";
@@ -389,7 +389,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				931724F0660643D1BC1BB92D /* OpenTokPlugin.m in Sources */,
+				76118462C2E842B39678E3A1 /* OpenTokPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
