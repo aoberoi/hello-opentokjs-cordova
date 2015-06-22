@@ -1,0 +1,7 @@
+cordova.define('config', function(require, exports, module) {
+  module.exports = {
+    apiKey: '',
+    sessionId: '',
+    token: ''
+  };
+});

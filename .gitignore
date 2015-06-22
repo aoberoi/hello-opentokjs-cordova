@@ -1,3 +1,5 @@
+www/js/config.js
+
 # node.js
 npm-debug.log
 /node_modules
@@ -21,6 +23,10 @@ platforms/android/CordovaLib/ant-gen
 platforms/android/CordovaLib/bin
 platforms/android/CordovaLib/gen
 platforms/android/CordovaLib/local.properties
+
+# Browser
+platforms/browser/www
+platforms/browser/build
 
 # res
 resources/signing
