@@ -26,6 +26,13 @@ var app = {
   // The scope of 'this' is the event. In order to call the 'receivedEvent'
   // function, we must explicitly call 'app.receivedEvent(...);'
   onDeviceReady: function() {
+    // Just for iOS devices.
+    if (window.device.platform === 'iOS') {
+      cordova.plugins.iosrtc.debug.enable('iosrtc*');
+      cordova.plugins.iosrtc.registerGlobals();
+      window.OT = cordova.require('cordova-plugin-opentokjs.OpenTokClient');
+    }
+
     OT.setLogLevel(OT.DEBUG);
     app.initializePublisher();
     app.initializeSession();

@@ -1,5 +1,8 @@
 www/js/config.js
 
+# plugins (do a plugin restore as the first step)
+/plugins/*
+
 # node.js
 npm-debug.log
 /node_modules

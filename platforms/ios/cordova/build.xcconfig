@@ -30,3 +30,6 @@ CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
 
 // (CB-7872) Solution for XCode 6.1 signing errors related to resource envelope format deprecation 
 CODE_SIGN_RESOURCE_RULES_PATH = $(SDKROOT)/ResourceRules.plist
+IPHONEOS_DEPLOYMENT_TARGET = 8.2
+SWIFT_OBJC_BRIDGING_HEADER = /Users/ankur/Developer/play/hello-opentokjs/plugins/com.eface2face.iosrtc/src/cordova-plugin-iosrtc-Bridging-Header.h
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
