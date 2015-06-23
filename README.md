@@ -10,11 +10,13 @@ get these values from the [TokBox Dashboard](https://dashboard.tokbox.com).
 
 1. Clone the repository.
 
-2. Rename the `www/js/config.js.sample` file to `www/js/config.js`.
+2. Download dependencies `cordova prepare`.
 
-3. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/config.js`.
+3. Rename the `www/js/config.js.sample` file to `www/js/config.js`.
 
-4. Build: `$ cordova build`.
+4. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/config.js`.
+
+5. Build: `$ cordova build`.
 
 ## Running the application
 
