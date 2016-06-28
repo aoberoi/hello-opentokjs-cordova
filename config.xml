@@ -29,3 +29,5 @@
     <plugin name="cordova-plugin-device" spec="^1.0.1" />
     <plugin name="cordova-plugin-opentokjs" spec="^0.1.2" />
 </widget>
+22
+33
