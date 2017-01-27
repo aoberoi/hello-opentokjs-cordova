@@ -16,7 +16,7 @@ Clone this repo to get the source code for OpenTok's Cordova plugin
 
 2. Install OpenTok plugin into your app:
 `cd my-app`  
-`cordova plugin add https://github.com/dharamvirsaini/helloworld_OpentokJS_Cordova`  
+`cordova plugin add https://github.com/dharamvirsaini/hello-opentokjs-cordova`  
 > Plugin already exists? To remove OpenTokPlugin: `cordova plugin remove com.tokbox.cordova.opentok`
 
 3a. For **Android Apps**, add Android platform into your cordova app
