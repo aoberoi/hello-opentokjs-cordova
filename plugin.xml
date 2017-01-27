@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.tokbox.cordova.opentok"
+    version="1.0.3">
+
+    <name>OpenTokCordovaPlugin</name>
+    <description>Add live video streaming to your Cordova Application</description>
+    <license>Apache 2.0</license>
+    <keywords>opentok,tokbox</keywords>
+
+    <platform name="android">
+      <asset src="www/opentok.js" target="opentok.js" />
+
+      <source-file src="src/android/com/tokbox/cordova/OpenTokAndroidPlugin.java"
+        target-dir="src/com/tokbox/cordova/" />
+
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <uses-feature android:name="android.hardware.camera" android:required="true" />
+        <uses-feature android:name="android.hardware.camera.autofocus" android:required="true" />
+      </config-file>
+
+      <!-- copy opentok sdk -->
+      <source-file src="src/android/libs/opentok-android-sdk-2.5.0.jar" target-dir="libs/" />
+      <source-file src="src/android/libs/armeabi/libopentok.so" target-dir="libs/armeabi" />
+      <source-file src="src/android/libs/x86/libopentok.so" target-dir="libs/x86" />
+
+      <config-file target="config.xml" parent="/*">
+        <feature name="OpenTokPlugin">
+          <param name="android-package" value="com.tokbox.cordova.OpenTokAndroidPlugin"/>
+        </feature>
+      </config-file>
+      
+    </platform>
+
+    <!-- ios -->
+    <platform name="ios">
+      <hook type="before_plugin_install" src="scripts/downloadiOSSDK.js" />
+      <asset src="www/opentok.js" target="opentok.js" />
+
+      <header-file src="src/ios/OpenTokPlugin.h" />
+      <source-file src="src/ios/OpenTokPlugin.m" />
+
+      <framework src="libstdc++.dylib" />
+      <framework src="libc++.dylib" />
+      <framework src="libxml2.dylib" />
+      <framework src="libsqlite3.dylib" />
+      <framework src="libpthread.dylib" />
+      <framework src="VideoToolbox.framework" />
+      <framework src="src/ios/OpenTok.framework" custom="true" />
+      <framework src="AudioToolbox.framework" />
+      <framework src="CoreData.framework" />
+      <framework src="AVFoundation.framework" />
+      <framework src="CoreGraphics.framework" />
+      <framework src="CoreMedia.framework" />
+      <framework src="CoreVideo.framework" />
+      <framework src="OpenGLES.framework" />
+      <framework src="SystemConfiguration.framework" />
+      <framework src="CoreTelephony.framework" />
+      <framework src="GLKit.framework" />
+      <framework src="EventKit.framework" />
+      <framework src="QuartzCore.framework" />
+      <framework src="MapKit.framework" />
+      <framework src="UIKit.framework" />
+      <framework src="Foundation.framework" />
+      <framework src="Security.framework" />
+      <framework src="CFNetwork.framework" />
+
+      <!-- Adopts project's config.xml to include the OpenTokPlugin and domain whitelists -->
+      <config-file target="config.xml" parent="/*/plugins">
+          <feature name="OpenTokPlugin">
+              <param name="ios-package" value="OpenTokPlugin"/>
+          </feature>
+      </config-file>
+      <config-file target="config.xml" parent="/*">
+        <access origin="*" />
+      </config-file>
+    </platform>
+</plugin>
